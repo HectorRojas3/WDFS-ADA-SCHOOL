@@ -1,0 +1,39 @@
+Funciones asíncronas lab
+
+    1. Crea una carpeta llamada laboratorio-asincronismo en tu computador para esta práctica. ✔️
+    2. Abre la carpeta laboratorio-asincronismo con Visual Studio Code. ✔️
+    3. Clona el siguiente repositorio en tu maquina: ✔️
+        https://github.com/ada-school/node-fundamentals-code-lab
+    4. Cambia a la rama asincronismo usando el siguiente comando ✔️ 
+        git checkout asincronismo
+    5. Instala las dependencias usando el comando npm install ✔️
+    6. En una terminal, en el directorio raíz, ejecuta el comando para iniciar tu asignación: ✔️
+        Mac ./ada-client start https://learn.ada-school.org/cohorts/647f4881086637b7cbe3146f/assigments/64623b0a372eeacc63859a16
+        Linux ./ada-client-linux start https://learn.ada-school.org/cohorts/647f4881086637b7cbe3146f/assigments/64623b0a372eeacc63859a16
+        Windows .\ada-client.exe start https://learn.ada-school.org/cohorts/647f4881086637b7cbe3146f/assigments/64623b0a372eeacc63859a16 
+        Se recomienda ejecutar en una terminal de PowerShell.
+    7. La terminal abrirá una ventana en el navegador para hacer login con la plataforma. 
+        Si no lo hace automaticamente, puedes seguir los pasos en la terminal para hacer login ✔️
+    8. Ejecuta el siguiente comando para correr las pruebas npm run test. ✔️
+        Las pruebas estan fallando, tu misión es ajustar el código para que las pruebas pasen 💪
+    9. En el archivo app en la función getRandomNumber, se quiere que retorne una promesa 
+        que se resuelva con el resultado de un numero aletorio entre 0 y 10.
+
+        return new Promise((resolve, reject) => {...})
+
+    10. Usando la librearía Math de Javascript genera un número aleatorio entre 0 y 10.
+
+        Math.floor(Math.random() * 10)
+
+    11. Dentro de la función de creación de la promesa, utiliza la función setTimeout(() => {...},3000) para simular un proceso largo que demora 3 segundos y por ello debería ser asíncrono.
+
+    12. Recuerda dentro de la función setTimeout(() => {...},3000) usar el metodo resolve de la promesa creada para pasar el número aletorio creado como resolución de la promesa.
+
+    13. Ejecuta de nuevo las pruebas con npm run test, valida que todas pasen.
+
+    14. Una vez las pruebas pasen ejecuta el siguiente comando para enviar tu asignación y obtener tu nota:
+    - Mac ./ada-client submit https://learn.ada-school.org/cohorts/647f4881086637b7cbe3146f/assigments/64623b0a372eeacc63859a16
+    - Linux ./ada-client-linux submit https://learn.ada-school.org/cohorts/647f4881086637b7cbe3146f/assigments/64623b0a372eeacc63859a16
+    - Windows .\ada-client.exe submit https://learn.ada-school.org/cohorts/647f4881086637b7cbe3146f/assigments/64623b0a372eeacc63859a16 Se recomienda ejecutar en una terminal de PowerShell.
+
+    Felicitaciones 🎉, haz creado tu primera función asincrona usando promesas.
